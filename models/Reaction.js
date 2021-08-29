@@ -20,3 +20,8 @@ const ReactionSchema = new Schema({
 		default: Date.now,
 	},
 });
+
+// create the Reaction model in ReactionSchema
+const Reaction = model('Reaction', ReactionSchema);
+
+module.exports = Reaction;

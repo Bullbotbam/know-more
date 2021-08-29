@@ -10,14 +10,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-app.use(require('./routes'));
-
-mongoose.connect(process.env.MONGODB_URI || '', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/know-more', {
 	// useFindAndModify: false,
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 });
-
+app.use(require('./routes'));
 //Use this to log mongo queries being executed
 mongoose.set('debug', true);
 
