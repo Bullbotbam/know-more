@@ -1,0 +1,25 @@
+{
+	"name": "know-more",
+	"version": "1.0.0",
+	"description": "A social media app where users can share their thoughts, react to friends’ thoughts.",
+	"main": "server.js",
+	"dependencies": {
+		"express": "^4.17.1",
+		"mongoose": "^6.0.2"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Bullbotbam/know-more.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Bullbotbam/know-more/issues"
+	},
+	"homepage": "https://github.com/Bullbotbam/know-more#readme"
+}
