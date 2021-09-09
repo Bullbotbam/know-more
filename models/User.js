@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, SchemaTypes } = require('mongoose');
+const dateFormat = require('../utils/dateFormat');
 
 const UserSchema = new Schema(
 	{
@@ -20,8 +21,8 @@ const UserSchema = new Schema(
 			},
 			required: [true, 'Email required'],
 		},
-		thoughts: [],
-		friends: [],
+		thoughts: [{ type: Schema.Types.ObjectId, ref: 'Thought' }],
+		friends: [{ type: Schema.Types.ObjectId, ref: 'User' }],
 	},
 	{
 		toJSON: {
@@ -32,11 +33,8 @@ const UserSchema = new Schema(
 );
 
 // create a virtual
-UserSchema.virtual('friendCount', {
-	ref: 'friends',
-	localField: '_id',
-	foreignField: 'userId',
-	count: true,
+UserSchema.virtual('friendCount').get(function () {
+	return this.friends.length;
 });
 
 // creating a User model using UserSchema
