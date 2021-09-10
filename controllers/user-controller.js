@@ -89,11 +89,10 @@ const UserController = {
 
 	// delete friend
 	deleteFriend({ params }, res) {
-		User.findOneAndDelete(
-			{ _id: params.userId }
-			// { $addToSet: { friends: { friendId: params.friendId } } },
-			// { new: true }
-		)
+		User.findOneAndDelete({ _id: params.friendId })
+
+			// 	{ $pull: { friends: { friendId: params.friendId } } },
+			// 	{ new: true, runValidators: true }
 
 			.then((dbData) => res.json(dbData))
 			.catch((err) => res.json(err));
