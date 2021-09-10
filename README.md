@@ -56,13 +56,13 @@ The testing of route creation was tested using Insomnia Core Dashboard.
 
 ## Links
 
-[User - routes walkthrough video](https://youtu.be/pnf9iLQg8CA)
+[User - routes walkthrough video](https://youtu.be/wVESsP6NQUo)
 </br>
-[Thought - routes walkthrough video](https://youtu.be/K73zxQpKJ3E)
+[Thought - routes walkthrough video](https://youtu.be/21Xv_5vyaRI)
 </br>
-[Reactions - routes walkthrough video](https://youtu.be/gxhAGA3dXyI)
+[Reactions - routes walkthrough video](https://youtu.be/DDTLMCqRWeA)
 </br>
-[Friends - routes walkthrough video](https://youtu.be/uVNSIJ4M_N8)
+[Friends - routes walkthrough video](https://youtu.be/UyoKEtVVda8)
 
 </br>
 <img src="assets/img/node-js-logo.png" width="64" height="64">
