@@ -2,6 +2,8 @@
 
 <br>
 
+![users](https://i9.ytimg.com/vi/wVESsP6NQUo/mq2.jpg?sqp=CKje74kG&rs=AOn4CLAG4L61xes_lHp1bnTgT0JCAY5rGQ)
+
 ## Table of Contents
 
 - [Description](#description)
@@ -56,6 +58,7 @@ The testing of route creation was tested using Insomnia Core Dashboard.
 
 ## Links
 
+![thoughts](https://i9.ytimg.com/vi/21Xv_5vyaRI/mq2.jpg?sqp=CKje74kG&rs=AOn4CLC1UH7hvjmFxCBZkApeBM6vxBn9yA)
 [User - routes walkthrough video](https://youtu.be/wVESsP6NQUo)
 </br>
 [Thought - routes walkthrough video](https://youtu.be/21Xv_5vyaRI)
