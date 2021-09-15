@@ -2,7 +2,7 @@
 
 <br>
 
-![users](https://i9.ytimg.com/vi/wVESsP6NQUo/mq2.jpg?sqp=CKje74kG&rs=AOn4CLAG4L61xes_lHp1bnTgT0JCAY5rGQ)
+![users](assets/img/user-routes.gif)
 
 ## Table of Contents
 
@@ -34,9 +34,13 @@ then...
 npm install express mongoose
 ```
 
+![friends](assets/img/friends-routes.gif)
+
 ## Purpose
 
 To build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. Using Express.js for routing, a MongoDB database, and the Mongoose ODM. The foundation of this application is demonstrating a data flow through a node server router.
+
+![reactions](assets/img/reaction-routes.gif)
 
 ## License
 
@@ -58,7 +62,7 @@ The testing of route creation was tested using Insomnia Core Dashboard.
 
 ## Links
 
-![thoughts](https://i9.ytimg.com/vi/21Xv_5vyaRI/mq2.jpg?sqp=CKje74kG&rs=AOn4CLC1UH7hvjmFxCBZkApeBM6vxBn9yA)
+![thoughts](assets/img/thought-routes.gif)
 
 </br>
 
@@ -71,7 +75,9 @@ The testing of route creation was tested using Insomnia Core Dashboard.
 [Friends - routes walkthrough video](https://youtu.be/UyoKEtVVda8)
 
 </br>
-<img src="assets/img/node-js-logo.png" width="64" height="64">
-<img src="assets/img/express-js-logo.png" width="64" height="64">
+
 <img src="assets/img/mongoose-js-logo.png" width="64" height="64">
 <img src="assets/img/insomnia-logo.png" width="64" height="64">
+<img src="assets/img/mongodb_logo.png" width="64" height="64">
+<img src="assets/img/express-js-logo.png" width="64" height="64">
+<img src="assets/img/node-js-logo.png" width="64" height="64">
