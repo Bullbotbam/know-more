@@ -14,15 +14,15 @@ router.route('/').get(getAllThoughts);
 
 // /api/thoughts/:id
 router
-	.route('/:thoughtId')
+	.route('/:id')
 	.get(getThoughtById)
 	.post(addThought)
 	.put(updateThought)
 	.delete(removeThought);
 
 // /api/thoughts/reactions
-router.route('/:thoughtId/reactions/').post(addReaction);
+router.route('/:id/reactions/').post(addReaction);
 
-router.route('/:thoughtId/reactions/:reactionId').delete(removeReaction);
+router.route('/:id/reactions/:reactionId').delete(removeReaction);
 
 module.exports = router;

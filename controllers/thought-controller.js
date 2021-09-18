@@ -17,7 +17,7 @@ const thoughtController = {
 	// get thoughts by id
 
 	getThoughtById({ params }, res) {
-		Thought.findOne({ _id: params.thoughtId })
+		Thought.findOne({ _id: params.id })
 
 			.then((dbData) => {
 				if (!dbData) {
@@ -39,7 +39,7 @@ const thoughtController = {
 			.then(({ _id }) => {
 				return User.findOneAndUpdate(
 					{ _id: params.userId },
-					{ $push: { thoughts: thoughtId } },
+					{ $push: { thoughts: id } },
 					{ new: true }
 				);
 			})
@@ -55,7 +55,7 @@ const thoughtController = {
 
 	// update the thoughts
 	updateThought({ params, body }, res) {
-		Thought.findOneAndUpdate({ _id: params.thoughtId }, body, { new: true })
+		Thought.findOneAndUpdate({ _id: params.id }, body, { new: true })
 
 			.then((dbData) => {
 				if (!dbData) {
@@ -69,7 +69,7 @@ const thoughtController = {
 
 	// remove thought
 	removeThought({ params }, res) {
-		Thought.findOneAndDelete({ _id: params.thoughtId })
+		Thought.findOneAndDelete({ _id: params.id })
 
 			.then((deletedthought) => {
 				if (!deletedthought) {
@@ -77,7 +77,7 @@ const thoughtController = {
 				}
 				return User.findOneAndUpdate(
 					{ _id: params.userId },
-					{ $pull: { thoughts: params.thoughtId } },
+					{ $pull: { thoughts: params.id } },
 					{ new: true }
 				);
 			})
@@ -93,7 +93,7 @@ const thoughtController = {
 
 	addReaction({ params, body }, res) {
 		Thought.findOneAndUpdate(
-			{ _id: params.thoughtId },
+			{ _id: params.id },
 			{ $push: { reactions: body } },
 			{ new: true, runValidators: true }
 		)
@@ -110,7 +110,7 @@ const thoughtController = {
 
 	addReaction({ params, body }, res) {
 		Thought.findOneAndUpdate(
-			{ _id: params.thoughtId },
+			{ _id: params.id },
 			{ $push: { reactions: body } },
 			{ new: true, runValidators: true }
 		)
@@ -128,7 +128,7 @@ const thoughtController = {
 	// remove reaction
 	removeReaction({ params }, res) {
 		Thought.findOneAndUpdate(
-			{ _id: params.thoughtId },
+			{ _id: params.id },
 			{ $pull: { reactions: { reactionId: params.reactionId } } },
 			{ new: true }
 		)
